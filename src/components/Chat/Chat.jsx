@@ -26,13 +26,13 @@ const Chat = () => {
   useEffect(() => {
     const {name, room} = queryString.parse(location.search)
 
-    // socket = io(ENDPOINT, {
-    //   transports: ['websocket'], // Force WebSocket
-    //   secure: true,
-    // })
+    socket = io(ENDPOINT, {
+      transports: ['websocket'], // Force WebSocket
+      secure: true,
+    })
     
-    socket = io(ENDPOINT)
-    
+    // socket = io(ENDPOINT)
+
     setName(name)
     setRoom(room)
 
