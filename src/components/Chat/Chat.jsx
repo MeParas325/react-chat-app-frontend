@@ -19,7 +19,7 @@ const Chat = () => {
   const [messages, setMessages] = useState([])
   const [message, setMessage] = useState("")
 
-  const ENDPOINT = "https://react-chat-app-backend-i1l1.onrender.coms://react-chat-app-eosin.vercel.app"
+  const ENDPOINT = "https://react-chat-app-backend-i1l1.onrender.com"
 
   const location = useLocation()
 
